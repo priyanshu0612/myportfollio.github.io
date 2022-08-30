@@ -5,384 +5,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>HHFC</title>
 </head>
-<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Oleo+Script+Swash+Caps&family=Square+Peg&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
-
-    *{
-        padding: 0;
-        margin: 0;
-    }
-
-    body {
-        color: #c7c7c7;
-        background-color: black;
-    }
-.navbar {
-    z-index: 100;
-    height: 12vh;
-    display: flex;
-    opacity: 0;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    font-size: 30px;
-    font-family: 'Baloo 2', cursive;
-    animation: myAnim 1s ease 14.5s 1 normal forwards;
-}
-
-@keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: translateY(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.menu:hover{
-    text-shadow: rgb(0, 255, 238) -1px 0,#5294e2 1px 0;
-    cursor: pointer;
-
-}
-
-#typedtext {
-    font-family: 'Baloo Bhaijaan 2', cursive;    font-size: 20px;
-    margin: 0px 100px;
-    letter-spacing: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #c7c7c7;
-    height: 76vh;
-    width: 500px;
-}
-
-/* #typedtext:hover{
-    text-shadow: red -1px 0,#5294e2 1px 0;
-} */
-
-.dp {
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    background: url("images/bg1.jpg");
-    width: 600px;
-    height: 400px;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-    padding-left: 40px;
-    position: relative;
-    font-size: 130px;
-    opacity: 0.8;
-    /* transform: rotate(90deg); */
-    animation: quote 3s ease 13s forwards;
-    color: black;
-}
-
-.dp span:hover{
-    cursor: pointer;
-    color: rgb(0, 255, 238);
-}
-
-@keyframes quote {
-    0%{
-        color: black;
-    }
-    100%{
-color: #c7c7c7;
-    }
-}
-
-.p{
-    animation: anim 0.2s ease-in-out;
-}
-
-.o{
-    animation: anim 0.2s ease-in-out 0.2s;
-}
-
-.r{
-    color: rgb(0, 255, 238);
-    animation: anim 0.2s ease-in-out 0.4s;
-}
-
-.t{
-    animation: anim 0.2s ease-in-out 0.6s;
-}
-
-.f{
-    animation: anim 0.2s ease-in-out 0.8s;
-}
-
-.o2{
-    color: rgb(0, 255, 238);
-    animation: anim 0.2s ease-in-out 1s;
-}
-
-.l{
-    color: rgb(0, 255, 238);
-    animation: anim 0.2s ease-in-out 1.2s;
-}
-
-.l2{
-    color: rgb(0, 255, 238);
-    animation: anim 0.2s ease-in-out 1.4s;
-}
-
-.i{
-    animation: anim 0.2s ease-in-out 1.6s;
-}
-
-.o3{
-    animation: anim 0.2s ease-in-out 1.8s;
-}
-
-@keyframes anim {
-    0%{
-        color: rgb(0, 255, 238);
-    }
-}
-
-.home{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* font-size: 200px; */
-    /* justify-content: flex-start; */
-    /* flex-flow: row;  */
-}
-
-.down{
-    height: 12vh;
-    list-style: none;
-    padding: 0 100px;
-    display: flex;
-    flex-direction: row;
-    color: #c7c7c7;
-
-}
-
-.down li{
-    cursor: pointer;
-    width: 400px;
-    opacity: 0;
-    font-size: 40px;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    font-weight: bold;
-    animation: in 1s ease-out 14s forwards;
-}
-
-.down li:hover{
-    color: yellow;
-    /* animation: bou 2s ease forwards; */
-}
-
-@keyframes bou {
-    0%{
-        font-size: 40px;
-        letter-spacing: 30px;
-    }
-    100%{
-        font-size: 45px;
-        letter-spacing: 4px;
-    }
-}
-
-
-@keyframes in {
-    0%{
-        transform: translateX(-300px);
-        opacity: 1;
-        }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-/* 
-.down li:hover{
-    color: yellow;
-    animation: lihover 1.2s ease-in-out forwards;
-}
-
-
-@keyframes lihover {
-    0%{
-        font-size: 40px;
-    }
-    40%{
-        font-size: 42px;
-    }
-    100%{
-        font-size: 40px;
-    }
-} */
-
-
-.mouse{
-    width: 25px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    display: flex;
-    position: relative;
-    margin-left: 230px;
-}
-
-.mouse-wheel1{
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 255, 238);
-    border-radius: 50%;
-    margin: auto;
-    animation: mouse-wheel 1s linear 15s infinite forwards;
-
-}
-
-@keyframes mouse-wheel {
-
-    0%{
-        opacity: 0;
-        transform: translateY(1rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(-1rem);
-    }
-    
-}
-
-@keyframes myAnim1 {
-	0% {
-		transform: scale(1);
-		transform-origin: 50% 0%;
-	}
-
-	100% {
-		transform: scale(0);
-		transform-origin: 50% 0%;
-	}
-}
-
-/* .main{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    transform: translateX(100px);
-} */
-
-  </style>
 
 <body>
-    <!-- <div class="main"> -->
-        <section class="home1" onscroll="hey()">
-            <section class="navbar">
-                <li> Priyanshu</li>
-                <li>Portfollio</li>
-                <li class="menu">Menu</li>
-            </section>
-            <section class="home">
-                <div id="typedtext"></div>
-                <div class="dp">
-                    <span class="p">P</span>
-                    <span class="o">O</span>
-                    <span class="r">R</span>
-                    <span class="t">T</span>
-                    <span class="f">F</span>
-                    <span class="o2">O</span>
-                    <span class="l">L</span>
-                    <span class="l2">L</span>
-                    <span class="i">I</span>
-                    <span class="o3">O</span>
+    <section class="homepage" id="home">
+        <nav class="nav">
+            <input type="checkbox" id="click">
+            <label for="click" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="logo">
+                <div class="mainlogo">
+                    <img src="images/hhfclogo1.jpg" alt="">
                 </div>
-            </section>
-            <section class="down">
-                <li>work with me ↵</li>
-                <span class="mouse">
-                    <span class="mouse-wheel1"></span>
-                </span>
-            </section>
-        </section>
+                <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="menu">
+                <li class="home"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about_us">About us</a></li>
+                <li class="projects"><a href="#projects_main">Projects</a></li>
+                <li class="team"><a href="#ourteam">Our Team</a></li>
+                <li class="achievement"><a href="#achievement_main">Achievements</a></li>
+                <li class="partners"><a href="">Partners</a></li>
+                <li class="rakt"><a href="https://forms.gle/Hq656JyckAVnnNiR9" target=”_blank”>Rakt Raiser</a></li>
+            </div>
+            <div class="donate_btn">
+                <div class="d_btn">Donate</div>
+            </div>
+        </nav>
 
-        <!-- <section class="menupane">
-            <li>HOme</li>
-            <li>ABout us</li>
-            <li>Skills</li>
-            <li>COntact</li>
-        </section> -->
-    <!-- </div> -->
 
-    <!-- <section class="about"> 
-        jdfhkjsdf
-        dsgsdfg
-        dfg
-        <dfn>g</dfn>
-    </section> -->
+        <div class="home_main">
+            <div class="left_main">
+                <div class="hhfc_d">
+                    <div class="dis1"><img src="images/des1.gif" alt=""></div>
+                    <div class="hhfc_h">H</div>
+                    <div class="hhfc_h2">H</div>
+                    <div class="hhfc_f">F</div>
+                    <div class="hhfc_c">C</div>
+                </div>
+
+                <div class="hhfc_quote">
+                    "Helping Hands Are Better Than Praying Lips"
+                </div>
+
+                <div class="register">
+                    <div class="register_img1"><img src="images/register_img.png" alt=""></div>
+                    <!-- <form class="register_bt"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K4EkAGIyFvMbKp" async> </script> </form> -->
+                    <div class="register_btn">Register</div>
+                    <div class="register_img2"><img src="images/register_img2.png" alt=""></div>
+                </div>
+
+                <div class="hhfc_in">
+                    <div>hhfc.in</div>
+                </div>
+            </div>
+            <div class="right_main"><video id="vid" src="images/hhfcvid.mp4" autoplay loop controls></video></div>
+        </div>
+    </section>
+
+    <section class="about_us" id="about_us">
+        <div class="about_left">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <span></span>
+            <div></div>
+        </div>
+        <div class="about_right">
+            <img src="images/child2.png" alt="">
+        </div>
+    </section>
+
+
+
+    <section class="what_we_do">
+        <div class="whatwedo_left">
+            <div class="whatwedo_h">
+                <h1>What we do?</h1>
+                <span></span>
+            </div>
+
+            <div class="whatwedo_main">
+                <div class="whatwedo_contents1">
+                    <div class="w_content1">
+                        <img src="images/education.png" alt="">
+                        <div>
+                            <h2>Education</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut </p>
+                        </div>
+                    </div>
+                    <div class="w_content2">
+                        <img src="images/food.png" alt="">
+                        <div>
+                            <h2>Food Donation</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut </p>
+                        </div>
+                    </div>
+                    <div class="w_content3">
+                        <img src="images/blood donation.png" alt="">
+                        <div>
+                            <h2>Food Donation</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whatwedo_contents2">
+                    <div class="w_content4">
+                        <img src="images/doctor.png" alt="">
+                        <div>
+                            <h2>Free medical camps</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut </p>
+                        </div>
+                    </div>
+                    <div class="w_content5">
+                        <img src="images/homesless.png" alt="">
+                        <div>
+                            <h2>Homeless Outreach</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut </p>
+                        </div>
+                    </div>
+                    <div class="w_content6">
+                        <img src="images/donate.png" alt="">
+                        <div>
+                            <h2>Charity events</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whatwedo_right">
+            <img src="images/child1.png" alt="">
+        </div>
+    </section>
+
+    <section class="projects_main" id="projects_main">
+        <div class="project_left">
+            <h1>Our Past</h1>
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <div></div>
+        </div>
+        <div class="project_right">
+            <div class="columns">
+                <figure class="card">
+                    <img src="images/child1.png" alt="">
+                    <figcaption>
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam temporibus corporis ipsam
+                            architecto qui omnis.</p>
+                    </figcaption>
+                </figure>
+
+
+
+                <figure class="card">
+                    <img src="images/child1.png" alt="">
+                    <figcaption>
+                        <h3>Project 2</h3>
+                        <p>sdckndsckjndjcndjvd dcjdsndjcn djdvkjnd dsjcnkdscn</p>
+                    </figcaption>
+                </figure>
+
+
+                <figure class="card">
+                    <img src="images/child1.png" alt="">
+                    <figcaption>
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia facere optio eos ad
+                            quae.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="project_btn">Show more</div>
+        </div>
+    </section>
+
+
+
+    <section class="team_main" id="ourteam">
+        <div class="team_left">
+            <h1>Meet Our</h1>
+            <h2>Team</h2>
+            <div></div>
+        </div>
+        <div class="team_right">
+            <div class="team_leader">
+                <div class="president">
+                    <img src="images/president.png" alt="">
+                    <h1>Priyanshu Gaurav</h1>
+                    <h2>President</h2>
+                </div>
+                <div class="vpresident">
+                    <img src="images/vpresident.png" alt="">
+                    <h1>Priyanshu Gaurav</h1>
+                    <h2>Vice-President</h2>
+                </div>
+                <div class="treasurer">
+                    <img src="images/treasurer.png" alt="">
+                    <h1>Priyanshu Gaurav</h1>
+                    <h2>Treasurer</h2>
+                </div>
+            </div>
+            <div class="des2">
+                <h1></h1>
+                <div></div>
+                <h2></h2>
+            </div>
+            <div class="members">
+                <h1>HHFC Members</h1>
+                <div>
+                    <div class="scroll-img">
+                        <div class="slider">
+                            <div class="slide-track">
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/aboutusdesign.png">
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="achievement_main" id="achievement_main">
+        <div class="achievement_left">
+            <div class="achievement_heading">Achievements</div>
+            <div class="award_detail"></div>
+        </div>
+        <div class="achievement_right"></div>
+    </section>
+
+
+
+
     <script>
-  var aText = new Array(
-    "Hey geeks",
-    "I'm Priyanshu gaurav",
-    "i'm a Freelance interactive & ","creative developer",
-    "and specially a keen student..."
-);
-var iSpeed = 100; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
-
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
-
-function typewriter() {
-    sContents = ' ';
-    iRow = Math.max(0, iIndex - iScrollAt);
-    var destination = document.getElementById("typedtext");
-
-    while (iRow < iIndex) {
-        sContents += aText[iRow++] + '<br />';
-    }
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
-    if (iTextPos++ == iArrLength) {
-        iTextPos = 0;
-        iIndex++;
-        if (iIndex != aText.length) {
-            iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 500);
-        }
-    } else {
-        setTimeout("typewriter()", iSpeed);
-    }
-}
-
-
-typewriter();
-
-
-$(document).ready(function() {
-    $(".home1").css({
-        "animation": "myAnim1 1s ease 0s 1 normal forwards;",
-    });
-});
-  </script>
+        document.getElementById('vid').play();
+    </script>
 </body>
 
 </html>
